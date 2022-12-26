@@ -1,0 +1,352 @@
+@import url(https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css);
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+  display: none;
+}
+
+*{padding:0;margin:0;border:0}*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}:focus,:active{outline:none}a:focus,a:active{outline:none}nav,footer,header,aside{display:block}html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%}input,button,textarea{font-family:inherit}input::-ms-clear{display:none}button{cursor:pointer}button::-moz-focus-inner{padding:0;border:0}a,a:visited{text-decoration:none}a:hover{text-decoration:none}ul li{list-style:none}img{vertical-align:top}h1,h2,h3,h3,h4,h5,h6{font-style:inherit;font-weight:400}@font-face{font-family:"TT Lakes";src:url(../ecf08c49b0b1d4d71f5b.woff) format("woff"),url(../a0bf8bd54132d614be5d.ttf) format("truetype"),url(../c794c866fb368b7f82aa.eot) format("embedded-opentype");font-weight:500;font-style:normal}@font-face{font-family:"TT Lakes";src:url(../fe25154d26f37feaf90c.woff) format("woff"),url(../1db5f8df31efefe6bea1.ttf) format("truetype"),url(../018ab39c10b6a4a7146a.eot) format("embedded-opentype");font-weight:700;font-style:normal}@font-face{font-family:"TT Lakes";src:url(../5fe27ad211f7b79014fc.woff) format("woff"),url(../8747246cd48097156cbb.ttf) format("truetype"),url(../c241ebcfcbd5a82503ea.eot) format("embedded-opentype");font-weight:900;font-style:normal}.hidden{z-index:0}.header{background-color:#fff;border-bottom:1px solid #d9fff5}.header__inner{max-height:88px;display:flex;justify-content:space-between;align-items:center}.header__btn-burger{margin:24px 8px 24px 16px}.header__visible-list{display:flex;flex-wrap:wrap;justify-content:space-between;margin:24px 16px}.header__item{margin:24px 0px 24px 12px}.header__list{display:flex;flex-wrap:wrap;justify-content:space-between}.header__line{width:2px;height:32px;background-color:#eaeaea;border-radius:1px;margin:28px 0px 28px 0px}.header__btn-search{margin-right:16px}.logo{margin-left:8px;margin-right:16px;width:98px;height:52px;background-repeat:no-repeat;background-size:contain;flex-shrink:0;flex-grow:1}.btn{height:40px;width:40px;background-color:#ff3e79;border-radius:20px;border:none}.btn:hover{opacity:.5}.main{margin:24px 0}.main__header{display:flex;flex-direction:row;justify-content:space-between;align-items:center}.main__title{padding-left:12px;margin:0;font-size:28px;line-height:40px;font-weight:900;letter-spacing:-0.6px;border:4px solid transparent;border-left:4px solid #41f6d7}.main__menu{align-items:center}.main__link{font-weight:700;text-decoration:none;color:#1b1c21}.main__button{padding:8px 32px;color:#7e7e82;white-space:nowrap;flex-shrink:0;box-sizing:border-box}.main__button:focus{background-color:#fff}.main__button-icon{margin-left:8px;margin-right:32px}.nav-sliders{flex-wrap:nowrap;overflow:auto}.nav-sliders .navigation{display:flex;position:relative;flex-direction:row;align-items:center;margin:24px 16px}.nav-sliders .navigation__item{font-size:16px}.nav-sliders .navigation__link{display:inline-block;padding-top:6px;padding-bottom:6px;padding-left:16px;padding-right:16px;font-family:"TT Lakes","Verdana",sans-serif;font-size:16px;font-weight:700;line-height:24px;letter-spacing:-0.2px;text-decoration:none;color:#7e7e82;white-space:nowrap;border:2px solid transparent}.nav-sliders .navigation__link:hover{background-color:#fff;border:2px solid #b8ffec;border-radius:6px}.content__text{display:flex;flex-direction:column;justify-content:flex-start;flex:1 1 100px;padding:12px;font-size:14px;line-height:20px}.content__paragraph{display:block;overflow:hidden;font-size:14px;line-height:18px;letter-spacing:.2px;color:#1b1c21;margin:10px}.content__image{margin-left:auto;margin-right:auto}.content__btn{width:140px;height:24px}.btn__more{margin-top:-20px;margin-left:10px;margin-bottom:20px}.btn__close{margin-top:120px;margin-left:-6px;margin-bottom:20px}.swiper__header{background-image:linear-gradient(to right, #f8f8f8 33%, #ffffff);font-size:16px;line-height:24px;padding:16px;text-transform:uppercase;color:#7e7e82;border-top:1px solid #d9fff5}.swiper-brand__wrapper{margin-top:16px;margin-left:16px;max-height:170px;transition:.5s}.swiper-brand__slide{background:#fff;border:1px solid #eaeaea;border-radius:6px;display:flex;align-items:center;justify-content:space-between;width:240px !important;height:72px;padding-left:16px;padding-right:16px;flex-shrink:0;flex-grow:1;position:relative;margin-bottom:20px}.swiper-brand__btn{border:2px solid #ff3e79;border-radius:20px;width:40px;height:40px;background:#fff}.swiper-brand__btn:hover{opacity:.5}.swiper__arrow{padding:3px 0px 0px 1px}.swiper__more{color:#1b1c21;font-weight:700;font-size:16px;line-height:24px;background:#f8f8f8;padding-left:15px}.swiper-pagination__repair{position:static;margin-bottom:10px}.swiper__close{margin-left:40px;margin-top:0}.swiper-pagination-bullet{height:12px;width:12px}.swiper-pagination-bullet-active{background-color:#b5b6bc}.swiper-technic__wrapper{max-height:160px;margin-top:20px;transition:.5s}.swiper-technic__slide{font-size:16px;background:#fff;border:1px solid #eaeaea;border-radius:6px;display:flex;align-items:center;justify-content:space-between;width:240px !important;height:160px;padding-bottom:100px;padding-left:16px;padding-right:16px;flex-shrink:0;flex-grow:1;position:relative;margin-bottom:20px}.swiper-technic__btn{border:2px solid #ff3e79;border-radius:20px;width:40px;height:40px;background:#fff;margin-top:180px}.swiper-technic__btn:hover{opacity:.5}.swiper-pagination__technic{margin-top:20px;position:static;text-align:center}.swiper__header{margin-top:20px}.price__wrapper{margin-top:16px;padding-left:8px}.price__slide{width:260px;height:200px;background:#fff;border-radius:6px}.price__titles{display:flex;flex-direction:column;line-height:16px;font-size:14px;color:#7e7e82}.price__title{margin-top:30px;margin-left:16px}.price__title:first-child{margin-top:16px}.price__contents{position:absolute;top:15px;display:flex;flex-direction:column;font-size:12px}.price__content{margin-top:30px;margin-left:16px}.price__btn{background:#ff3e79;border-radius:16px;font-size:12px;line-height:24px;color:#fff;text-transform:uppercase;width:119px;height:32px;margin-left:130px;margin-top:20px;text-align:center}.price__btn::after{content:"";background-position:10px 15px;display:inline-block;width:24px;height:24px;background-image:url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNyIgaGVpZ2h0PSIxMCIgdmlld0JveD0iMCAwIDcgMTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMy44IDQuOTk5OTRMMC43OTE1NTQgMi4yMjlDMC4zNjQxIDEuODM1MjkgMC4zNjExMjUgMS4xNjEzOCAwLjc4NTA4OCAwLjc2MzkxN0wwLjkyMDI5MyAwLjYzNzE2MkMxLjMwMzIxIDAuMjc4MTc3IDEuODk4NTEgMC4yNzYzMzMgMi4yODM2NCAwLjYzMjkzOUw2LjkzODEyIDQuOTQyNjRDNi45NzE1IDQuOTczNTUgNi45NzE1IDUuMDI2MzMgNi45MzgxMiA1LjA1NzIzTDIuMzQ2NzQgOS4zMDg1MUMxLjkyNjA2IDkuNjk4MDMgMS4yNzU4MiA5LjY5NjAxIDAuODU3NTU0IDkuMzAzODlDMC4zOTQ0NTcgOC44Njk3NCAwLjM5NzcwNiA4LjEzMzYzIDAuODY0NjE2IDcuNzAzNThMMy44IDQuOTk5OTRaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K);background-repeat:no-repeat;margin-left:10px;margin-top:-7px}.swiper-pagination__price{position:static;margin-top:20px;text-align:center}@media(min-width: 425px){.price{display:none}.price__header{display:none}}.prices{margin-bottom:16px;border-top:1px solid #d9fff5}@media screen and (min-width: 426px){.prices{margin-bottom:24px}.prices__table{display:table;width:calc(100% - 60px);margin-left:auto;margin-right:auto;font-size:14px;border-collapse:collapse}.prices__table thead{font-weight:700;color:#7e7e82;text-align:left}.prices__table tbody{background-color:#fff;border-left:16px solid #fff;border-right:16px solid #fff;border-radius:6px}.prices__table tbody .prices__t-row{border-bottom:1px solid #eaeaea}.prices__table tbody .prices__t-row:last-child{border-bottom:none}}@media screen and (min-width: 426px)and (min-width: 426px){.prices__table tbody{display:table-row-group}}@media screen and (min-width: 426px){.prices__t-cell{padding-top:23px;padding-left:1px;padding-bottom:23px}.prices__t-cell:nth-child(4){padding-right:3px;text-align:right}}@media screen and (min-width: 426px){.prices__btn{margin-left:auto}}@media screen and (max-width: 425px){.prices__table{display:block;padding-left:8px;padding-right:8px;margin-bottom:16px;background-color:transparent;overflow:hidden}.prices__table tbody{display:flex}.prices__table thead{display:none}.prices__t-row{position:relative;display:flex;flex-direction:column;justify-content:space-between;flex-shrink:0;width:260px;min-height:200px;padding:16px;margin-right:16px;background-color:#fff;border-radius:6px}.prices__t-cell{display:block;font-size:14px;line-height:18px;letter-spacing:.2px}.prices__t-cell:nth-child(1)::before{content:"Ремонтные услуги";display:block;margin-bottom:4px;font-weight:700;font-size:14px;line-height:16px;color:#7e7e82}.prices__t-cell:nth-child(2)::before{content:"Цена";display:block;margin-bottom:4px;font-weight:700;font-size:14px;line-height:16px;color:#7e7e82}.prices__t-cell:nth-child(3)::before{content:"Срок";display:block;margin-bottom:4px;font-weight:700;font-size:14px;line-height:16px;color:#7e7e82}.prices__t-cell:last-child{position:absolute;right:16px;bottom:16px}}.prices__title{padding:16px;margin-top:0;margin-bottom:16px;font-weight:normal;font-size:16px;line-height:24px;text-transform:uppercase;letter-spacing:-0.2px;color:#7e7e82;background-image:linear-gradient(to right, #f8f8f8, #ffffff)}@media screen and (min-width: 321px){.prices__title{padding:16px 24px;margin-bottom:8px}}.prices__btn{background:#ff3e79;border-radius:16px;font-size:12px;line-height:24px;color:#fff;text-transform:uppercase;width:119px;height:32px;margin-left:110px;text-align:center}.prices__btn:hover{opacity:.5}.prices__btn::after{content:"";background-position:10px 15px;display:inline-block;width:24px;height:24px;background-image:url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNyIgaGVpZ2h0PSIxMCIgdmlld0JveD0iMCAwIDcgMTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMy44IDQuOTk5OTRMMC43OTE1NTQgMi4yMjlDMC4zNjQxIDEuODM1MjkgMC4zNjExMjUgMS4xNjEzOCAwLjc4NTA4OCAwLjc2MzkxN0wwLjkyMDI5MyAwLjYzNzE2MkMxLjMwMzIxIDAuMjc4MTc3IDEuODk4NTEgMC4yNzYzMzMgMi4yODM2NCAwLjYzMjkzOUw2LjkzODEyIDQuOTQyNjRDNi45NzE1IDQuOTczNTUgNi45NzE1IDUuMDI2MzMgNi45MzgxMiA1LjA1NzIzTDIuMzQ2NzQgOS4zMDg1MUMxLjkyNjA2IDkuNjk4MDMgMS4yNzU4MiA5LjY5NjAxIDAuODU3NTU0IDkuMzAzODlDMC4zOTQ0NTcgOC44Njk3NCAwLjM5NzcwNiA4LjEzMzYzIDAuODY0NjE2IDcuNzAzNThMMy44IDQuOTk5OTRaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K);background-repeat:no-repeat;margin-left:10px;margin-top:-7px}@media(max-width: 425px){.prices{display:none}}.prices__text{font-size:14px;line-height:20px;letter-spacing:.2px;margin-left:16px;margin-top:16px;max-width:430px}.prices__link{font-size:14px;line-height:24px;font-weight:800;color:#1b1c21;margin-left:16px;margin-top:16px;margin-bottom:20px}.prices__link::after{content:"";background-position:10px 13px;display:inline-block;width:24px;height:24px;background-image:url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOCIgaGVpZ2h0PSIxMiIgdmlld0JveD0iMCAwIDggMTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMS4xNjI1IDkuNjA0MTFDMC44MzgxODYgOS45Nzk1NyAwLjgzODE4NiAxMC41MzYgMS4xNjI1IDEwLjkxMTVMMS4yOTQzMiAxMS4wNjQxQzEuNjkzMTcgMTEuNTI1OCAyLjQwODk5IDExLjUyNTggMi44MDc4NSAxMS4wNjQxTDYuODM3MiA2LjM5OTM3QzcuMTYxNTIgNi4wMjM5MiA3LjE2MTUyIDUuNDY3NDUgNi44MzcyIDUuMDkyTDIuODA3ODUgMC40MjcyNzdDMi40MDg5OSAtMC4wMzQ0NzE1IDEuNjkzMTcgLTAuMDM0NDcxNSAxLjI5NDMyIDAuNDI3Mjc4TDEuMTYyNSAwLjU3OTg4QzAuODM4MTg1IDAuOTU1MzMzIDAuODM4MTg2IDEuNTExOCAxLjE2MjUgMS44ODcyNkw0LjQ5NTM5IDUuNzQ1NjlMMS4xNjI1IDkuNjA0MTFaIiBmaWxsPSIjRkYzRTc5Ii8+Cjwvc3ZnPgo=);background-repeat:no-repeat;margin-top:0px}@media(min-width: 550px){.prices__link{margin-left:30px}.prices__text{margin-left:30px}}.footer__list{font-size:14px;line-height:16px;text-align:center;color:#7e7e82;margin-top:30px;border-top:1px solid #d9fff5;padding-bottom:20px !important}.footer__link{margin-top:15px}@media(min-width: 767px){.footer__list{display:flex;justify-content:space-between;padding:32px 24px 24px}}.burger-menu{display:flex;flex-direction:column;height:960px;max-width:320px;width:320px;min-width:320px;box-shadow:16px 0px 52px rgba(14,24,80,.2),-2px 0px 4px rgba(69,79,126,.02);font-family:"TT Lakes","Verdana",sans-serif;overflow-y:scroll;overflow-x:hidden;position:absolute;top:0;left:-500px;background:#fff;transition:2s;z-index:111}.wrapper{display:flex;flex-direction:column;min-height:100%}.header--burger__link{display:flex;justify-content:space-evenly;align-items:center}.header--burger__close{margin:23px 16px 24px 24px}.header--burger__logo{margin-left:8px;margin-right:16px;width:98px;height:52px;background-repeat:no-repeat;background-size:contain;flex-shrink:0;flex-grow:1}.header--burger__search{margin:23px 23px 24px 24px}.main--burger{flex:1 1 auto}.main--burger__list{margin:12px 16px 24px 24px;font-weight:700}.main--burger__link{color:#1b1c21;font-size:16px;line-height:48px}.main--burger__click{color:#7e7e82}.main--burger__click::before{content:"";position:absolute;left:0px;top:105px;width:4px;height:32px;border:4px solid transparent;border-left:4px solid #41f6d7}.footer--burger{margin-left:24px}.footer--burger__link{margin-bottom:20px}.footer--burger__mail{margin:0px 0 0 16px}.footer--burger__profile{margin:0px 0 0px 16px}.footer--burger__e-mail{font-size:16px;color:#1b1c21;font-weight:700;margin-bottom:20px}.footer--burger__phone--number{margin-bottom:100px;font-size:24px;font-weight:900}.footer--burger__lang{display:flex;font-size:16px;margin-bottom:40px;font-weight:700}.footer--burger__lang--link{color:#1b1c21;margin-left:10px}.footer--burger__click{color:#7e7e82;margin-left:0px}.footer--burger__click:hover{opacity:.5}@media screen and (min-width: 1120px){.burger-menu{position:fixed;left:auto;width:306px;padding-left:4px;box-shadow:none;box-shadow:inset 1px 0 0 0 #d9fff5,inset -1px 0 0 0 #d9fff5;overflow-y:visible}.header--burger__close{display:none}.hidden{margin-left:320px}}.burger-call{display:flex;flex-direction:column;height:960px;max-width:320px;width:320px;min-width:320px;box-shadow:16px 0px 52px rgba(14,24,80,.2),-2px 0px 4px rgba(69,79,126,.02);font-family:"TT Lakes","Verdana",sans-serif;position:absolute;top:0;right:-500px;background:#fff;transition:2s;z-index:222;position:fixed;padding-left:16px;padding-top:24px}.burger-call__btn{margin-bottom:30px}.burger-call__header{font-weight:800;margin-bottom:30px}.burger-call__header::before{content:"";position:absolute;left:0px;top:85px;width:4px;height:32px;border:4px solid transparent;border-left:4px solid #41f6d7}.burger-call__input{border:1px solid #eaeaea;border-radius:8px;width:288px;height:48px;align-items:center;padding-left:16px;margin-bottom:20px}.burger-call__input:focus{border:2px solid #41f6d7;border-radius:8px}.burger-call__link{color:#ff3e79}.burger-call__form-button{font-weight:700;padding-left:8px;margin-left:165px;margin-top:25px}@media(min-width: 1140px){.burger-call__btn{margin-left:-100px}.burger-call__header{margin-top:-55px}.burger-call__header::before{margin-top:-55px}}.feedback-modal{display:flex;flex-direction:column;height:960px;max-width:320px;width:320px;min-width:320px;box-shadow:16px 0px 52px rgba(14,24,80,.2),-2px 0px 4px rgba(69,79,126,.02);font-family:"TT Lakes","Verdana",sans-serif;position:absolute;top:0;right:-500px;background:#fff;transition:2s;z-index:222;position:fixed;padding-left:16px;padding-top:24px}.feedback-modal__btn{margin-bottom:30px}.feedback-modal__title{font-weight:800;margin-bottom:30px}.feedback-modal__title::before{content:"";position:absolute;left:0px;top:85px;width:4px;height:32px;border:4px solid transparent;border-left:4px solid #41f6d7}.feedback-form__name{border:1px solid #eaeaea;border-radius:8px;width:288px;height:48px;align-items:center;padding-left:16px;margin-bottom:20px}.feedback-form__phone-number{border:1px solid #eaeaea;border-radius:8px;width:288px;height:48px;align-items:center;padding-left:16px;margin-bottom:20px}.feedback-form__email{border:1px solid #eaeaea;border-radius:8px;width:288px;height:48px;align-items:center;padding-left:16px;margin-bottom:20px}.feedback-form__message{border:1px solid #eaeaea;border-radius:8px;width:288px;height:118px;padding-top:20px;padding-left:16px;margin-bottom:20px}.feedback-form__btn{padding-left:8px;margin-left:165px;margin-top:25px;font-weight:700}body{background:#f8f8f8;min-width:320px;overflow-x:hidden;font-family:"TT Lakes","Verdana",sans-serif;max-width:1440px;margin:auto}img{max-width:100%}@media(max-width: 767px){.visible{display:none}.header__visible-list{display:none}.content__paragraph{max-height:150px}}@media(max-width: 1119px){.main__visible{display:none}}@media(min-width: 535px)and (max-width: 768px){.main{margin-bottom:160px}}@media(min-width: 535px){.content__image{align-self:flex-start;line-height:20px;width:50%;margin-left:25px;margin-right:30px;margin-top:15px}.content{display:flex;margin-left:24px;margin-right:24px}.content__paragraph{min-height:160px;min-width:220px}.content__btn{display:inline-flex;position:absolute;top:460px}.btn__more::before{margin-top:-5px}}@media(min-width: 768px){.content__paragraph{height:160px}.btn__close{top:400px}}@media(min-width: 1120px){.header{display:none}.navigation{flex-wrap:wrap}.main__header{padding-top:42px}.btn__close{top:450px}}@media(max-width: 1120px){.content__paragraph__hidden{display:none}}@media(max-width: 425px){.swiper__more{display:none}}@media(max-width: 375px){.swiper-wrapper{margin-top:16px;margin-left:-25px}}@media(min-width: 376px)and (max-width: 425px){.swiper-wrapper{margin:16px;margin-left:-15%}}@media(min-width: 426px){.swiper-wrapper{display:grid;justify-content:center}.swiper-pagination{display:none}.swiper__more{margin-top:25px}}@media(min-width: 768px){.swiper-pagination{display:none}.swiper-wrapper{display:grid;grid-template-columns:224px 224px 224px;grid-column-gap:24px;margin-left:-10px}.swiper-slide{width:224px !important}}@media(max-width: 1119px){.swiper-slide__1120{display:none}}@media(min-width: 1439px){.swiper-wrapper{grid-template-columns:240px 240px 240px 240px}.swiper__header{margin-left:20px}.swiper__close{margin-left:30px}.swiper__more{margin-left:15px}}.btn__more{color:#1b1c21;font-weight:700;font-size:16px;line-height:24px;background:#f8f8f8}.btn__more::before{content:"";background-position:10px 12px;display:inline-block;width:24px;height:24px;background-image:url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOCIgaGVpZ2h0PSIxMSIgdmlld0JveD0iMCAwIDggMTEiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNNi41MDAwOCAwLjUwMDA3Nkw0LjAwMDA4IDMuMDAwMDhMMS41MDAwOCAwLjUwMDA3NkMxLjIyMzkzIDAuMjIzOTMzIDAuNzc2MjE4IDAuMjIzOTMzIDAuNTAwMDc2IDAuNTAwMDc2QzAuMjIzOTMzIDAuNzc2MjE4IDAuMjIzOTMzIDEuMjIzOTMgMC41MDAwNzUgMS41MDAwOEwzLjI5Mjk3IDQuMjkyOTdDMy42ODM0OSA0LjY4MzQ5IDQuMzE2NjYgNC42ODM0OSA0LjcwNzE4IDQuMjkyOTdMNy41MDAwOCAxLjUwMDA4QzcuNzc2MjIgMS4yMjM5MyA3Ljc3NjIyIDAuNzc2MjE4IDcuNTAwMDggMC41MDAwNzZDNy4yMjM5MyAwLjIyMzkzMyA2Ljc3NjIyIDAuMjIzOTMzIDYuNTAwMDggMC41MDAwNzZaTTYuNTAwMDggNi41MDAwOEw0LjAwMDA4IDkuMDAwMDhMMS41MDAwOCA2LjUwMDA4QzEuMjIzOTMgNi4yMjM5MyAwLjc3NjIxOCA2LjIyMzkzIDAuNTAwMDc2IDYuNTAwMDhDMC4yMjM5MzMgNi43NzYyMiAwLjIyMzkzMyA3LjIyMzkzIDAuNTAwMDc1IDcuNTAwMDhMMy4yOTI5NyAxMC4yOTNDMy42ODM0OSAxMC42ODM1IDQuMzE2NjYgMTAuNjgzNSA0LjcwNzE4IDEwLjI5M0w3LjUwMDA4IDcuNTAwMDhDNy43NzYyMiA3LjIyMzkzIDcuNzc2MjIgNi43NzYyMiA3LjUwMDA4IDYuNTAwMDhDNy4yMjM5MyA2LjIyMzkzIDYuNzc2MjIgNi4yMjM5MyA2LjUwMDA4IDYuNTAwMDhaIiBmaWxsPSIjNDFGNkQ3Ii8+Cjwvc3ZnPgo=);background-repeat:no-repeat}.btn__close{color:#1b1c21;font-weight:700;font-size:16px;line-height:24px;background:#f8f8f8;display:none}.btn__close::before{content:"";display:inline-block;width:24px;height:24px;background-image:url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOCIgaGVpZ2h0PSIxMSIgdmlld0JveD0iMCAwIDggMTEiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMS40OTk5MiAxMC40OTk5TDMuOTk5OTIgNy45OTk5Mkw2LjQ5OTkyIDEwLjQ5OTlDNi43NzYwNyAxMC43NzYxIDcuMjIzNzggMTAuNzc2MSA3LjQ5OTkyIDEwLjQ5OTlDNy43NzYwNyAxMC4yMjM4IDcuNzc2MDcgOS43NzYwNyA3LjQ5OTkyIDkuNDk5OTJMNC43MDcwMyA2LjcwNzAzQzQuMzE2NTEgNi4zMTY1MSAzLjY4MzM0IDYuMzE2NTEgMy4yOTI4MiA2LjcwNzAzTDAuNDk5OTI0IDkuNDk5OTNDMC4yMjM3ODEgOS43NzYwNyAwLjIyMzc4MSAxMC4yMjM4IDAuNDk5OTI0IDEwLjQ5OTlDMC43NzYwNjYgMTAuNzc2MSAxLjIyMzc4IDEwLjc3NjEgMS40OTk5MiAxMC40OTk5Wk0xLjQ5OTkyIDQuNDk5OTJMMy45OTk5MiAxLjk5OTkyTDYuNDk5OTIgNC40OTk5MkM2Ljc3NjA3IDQuNzc2MDcgNy4yMjM3OCA0Ljc3NjA3IDcuNDk5OTIgNC40OTk5MkM3Ljc3NjA3IDQuMjIzNzggNy43NzYwNyAzLjc3NjA3IDcuNDk5OTIgMy40OTk5Mkw0LjcwNzAzIDAuNzA3MDMyQzQuMzE2NTEgMC4zMTY1MDggMy42ODMzNCAwLjMxNjUwNyAzLjI5MjgyIDAuNzA3MDMxTDAuNDk5OTI0IDMuNDk5OTNDMC4yMjM3ODEgMy43NzYwNyAwLjIyMzc4MSA0LjIyMzc4IDAuNDk5OTI0IDQuNDk5OTNDMC43NzYwNjYgNC43NzYwNyAxLjIyMzc4IDQuNzc2MDcgMS40OTk5MiA0LjQ5OTkyWiIgZmlsbD0iIzQxRjZENyIvPgo8L3N2Zz4K);background-position:5px 12px;background-repeat:no-repeat}

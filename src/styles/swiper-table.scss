@@ -1,0 +1,50 @@
+.prices {
+    
+    &__table {
+        margin-left: 16px;
+        margin-top: 10px;
+    }
+    
+    &__t-row {
+        font-size: 14px;
+        line-height: 16px;
+        color: #7E7E82;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-shrink: 0;
+        width: 260px;
+        min-height: 200px;
+        padding: 16px;
+        margin-right: 16px;
+        background-color: #fff;
+        border-radius: 6px; 
+    }
+    
+    &__t-cell {
+        display: block;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.2px;
+    }
+    
+    &__t-body {
+
+    }
+    
+    &__btn {
+    }
+    }
+    .swiper {
+    
+    &__header {
+    }
+    }
+    .order-btn {
+    }
+    .pagination {
+    }
+    .prices-pagination {
+    }
+    

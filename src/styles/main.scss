@@ -1,0 +1,233 @@
+@import "reset.scss";
+@import "fonts.scss";
+@import "main-menu__header.scss";
+@import "main-menu__main.scss";
+@import "swiper-repair.scss";
+@import "swiper-technic.scss";
+@import "swiper-price.scss";
+@import "swiper-price__425.scss";
+@import "price__text.scss";
+@import "footer.scss";
+@import "burger-menu.scss";
+@import "burger-call.scss";
+@import "feedback-modal.scss";
+@import "https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css";
+
+body {
+    background:  #F8F8F8;
+    min-width: 320px;
+    overflow-x: hidden;
+    font-family: "TT Lakes", "Verdana", sans-serif;
+    max-width: 1440px;
+    margin: auto;
+}
+img {
+    max-width: 100%;
+}
+
+
+/* media */
+
+/* media */
+@media(max-width: 767px) {
+    .visible {
+        display: none;
+    }
+    .header__visible-list {
+        display: none;
+    }
+    .content__paragraph {
+        max-height: 150px;
+    }
+ 
+}
+
+
+
+@media(max-width: 1119px) {
+    .main__visible {
+        display: none;
+    }
+
+}
+@media (min-width: 535px) and (max-width: 768px) {
+    .main {
+        margin-bottom: 160px;
+    }
+}
+@media(min-width:535px) {
+
+    .content__image { 
+        align-self: flex-start;
+        line-height: 20px;
+          width: 50%;
+          margin-left: 25px; 
+          margin-right: 30px;
+          margin-top: 15px;
+          
+    } 
+      .content {
+        display: flex;
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+    .content__paragraph {
+        min-height: 160px;
+        min-width: 220px;
+    }
+    .content__btn {
+       display: inline-flex;
+       position: absolute;
+       top: 460px;
+    }
+    .btn__more::before {
+        margin-top: -5px;
+    }
+    
+}
+
+@media (min-width: 768px) {
+    .content__paragraph {
+        height: 160px;
+    }
+    .btn__close {
+        top: 400px;
+    }
+    
+}
+
+@media(min-width: 1120px) {
+    .header  {
+        display: none;
+    }
+    .navigation {
+        flex-wrap: wrap;
+    }    
+    .main__header {
+        padding-top: 42px;
+    }
+    
+    .btn__close {
+        top: 450px;
+    }
+}
+
+@media (max-width: 1120px) {
+    .content__paragraph__hidden {
+        display: none;
+    }
+}
+/* media swiper-repair */
+
+@media (max-width: 425px) {
+    .swiper__more {
+        display: none;
+    }
+    
+}
+@media (max-width: 375px) {
+    .swiper-wrapper {
+        margin-top: 16px;
+        margin-left: -25px;
+    }
+}
+@media (min-width: 376px) and (max-width: 425px)  {
+    .swiper-wrapper {
+        margin: 16px;
+        margin-left: -15%;
+    }
+}
+
+@media (min-width: 426px) {
+    .swiper-wrapper {
+        display: grid;
+        justify-content: center;
+        
+    }
+    .swiper-pagination {
+        display: none;
+     }
+
+     .swiper__more {
+        margin-top: 25px;
+     }
+}
+
+ @media (min-width: 768px) {
+    .swiper-pagination {
+        display: none;
+     }
+     .swiper-wrapper {
+        display: grid;
+        grid-template-columns: 224px 224px 224px;
+        grid-column-gap: 24px;
+        margin-left: -10px;
+        
+     }
+     .swiper-slide {
+        width: 224px !important;
+     }
+     
+ }
+@media (max-width: 1119px) {
+    .swiper-slide__1120 {
+        display: none;
+    }
+}
+ @media (min-width: 1439px) {
+    .swiper-wrapper {
+    grid-template-columns: 240px 240px 240px 240px;
+    }
+    .swiper__header {
+        margin-left: 20px;
+    }
+    .swiper__close {
+        margin-left: 30px;
+    }
+    .swiper__more {
+        margin-left: 15px;
+    }
+ }
+
+/* button */ 
+
+.btn__more {
+    color: #1B1C21;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    background: #f8f8f8;
+    
+    
+}
+.btn__more::before {
+    content: '';
+    background-position: 10px 12px;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/arrow.svg); 
+    background-repeat: no-repeat;
+}
+  
+.btn__close {
+    color: #1B1C21;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    background: #f8f8f8;
+    
+    display: none;
+    
+}
+
+.btn__close::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/close.svg) ; 
+    background-position: 5px 12px;
+    background-repeat: no-repeat;
+    
+}

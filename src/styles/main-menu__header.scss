@@ -1,0 +1,90 @@
+.hidden {
+    z-index: 0;
+}
+.header {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #D9FFF5;
+    
+    &__inner {
+        max-height: 88px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__btn-burger {
+        margin: 24px 8px 24px 16px;
+    }
+    
+    &__visible-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 24px 16px;
+    }
+
+    &__item {
+        margin: 24px 0px 24px 12px ;
+    }
+
+    &__btn-phone {
+        
+    } 
+
+    &_btn-mail {
+
+    }
+    
+    &__btn-profile {
+
+    }
+    
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__line {
+        width: 2px;
+        height: 32px;
+        background-color: #eaeaea;
+        border-radius: 1px;
+        margin: 28px 0px 28px 0px;
+    }
+
+    &__btn-order {
+
+    }
+    &__btn-search {
+        margin-right: 16px;
+    }
+}
+
+.logo {
+    margin-left: 8px;
+    margin-right: 16px;
+    width: 98px;
+    height: 52px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    flex-shrink: 0;
+    flex-grow: 1;
+
+    &__link {
+
+    }
+}
+
+.btn {
+    height: 40px;
+    width: 40px;
+    background-color: #FF3E79;
+    border-radius: 20px;
+    border: none;
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
+

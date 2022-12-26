@@ -1,0 +1,41 @@
+.prices {
+
+    &__text {
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+        margin-left: 16px;
+        margin-top: 16px;
+        max-width: 430px;
+    }
+    
+    &__link {
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 800;
+        color: #1B1C21;
+        margin-left: 16px;
+        margin-top: 16px;
+       margin-bottom: 20px;
+    }
+    &__link::after {
+        content: '';
+        background-position: 10px 13px;
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background-image: url(../img/dropdown_pink.svg);
+        background-repeat: no-repeat;
+        margin-top: 0px;
+        
+    }
+}
+    
+@media (min-width: 550px) {
+    .prices__link {
+        margin-left: 30px;
+    }
+    .prices__text {
+        margin-left: 30px;
+    }
+}
